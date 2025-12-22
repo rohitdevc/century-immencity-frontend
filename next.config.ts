@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'immencity.centuryrealestate.in',
+        hostname: 'www.immencity.co.in',
         port: '',
         pathname: '/**'
       },
