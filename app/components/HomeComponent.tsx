@@ -320,16 +320,16 @@ export default function HomeComponent({
     )}
     {
       management && management.length > 0 && (
-        <section className="container max-w-full flex flex-col gap-10 md:gap-20 py-20 px-5 lg:px-10 xl:px-25 font-corporate-regular bg-white text-black opacity-0 translate-y-10" ref={keyManagementRef}>
+        <section className="container max-w-full flex flex-col gap-10 md:gap-20 py-20 px-5 lg:px-15 font-corporate-regular bg-white text-black opacity-0 translate-y-10" ref={keyManagementRef}>
           <div className="flex flex-col gap-5 justify-center items-center text-center">
             <h2 className="text-2xl">KEY MANAGEMENT PERSONNEL</h2>
           </div>
-          <div className="flex flex-col md:flex-row gap-5 text-center justify-around">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 text-center">
             {
               management.map((management_row, key) => (
                 <div className="flex flex-col gap-2" key={key}>
                   <p className="text-3xl lg:text-4xl">{management_row.management_name}</p>
-                  <span className="text-xl md:text-2xl lg:text-3xl">({management_row.management_designation})</span>
+                  <span className="text-xl md:text-2xl">({management_row.management_designation})</span>
                 </div>
               ))
             }
