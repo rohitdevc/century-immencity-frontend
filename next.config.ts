@@ -1,6 +1,23 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.CONTEXT === "production";
+
 const nextConfig: NextConfig = {
+  async headers() {
+    if (isProd) return [];
+    
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow",
+          },
+        ],
+      },
+    ];
+  },
   basePath: '',
   turbopack: {
     root: __dirname,
