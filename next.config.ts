@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.CONTEXT === "production";
+const isNetlifyDomain = process.env.URL?.includes("netlify.app");
 
 const nextConfig: NextConfig = {
   async headers() {
-    if (isProd) return [];
+    if (!isNetlifyDomain) return [];
     
     return [
       {
