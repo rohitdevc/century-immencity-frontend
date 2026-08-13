@@ -1,0 +1,23 @@
+services:
+  immencity:
+    container_name: century-immencity
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        API_DOMAIN_NAME: ${API_DOMAIN_NAME}
+        NEXT_PUBLIC_PATH: ${NEXT_PUBLIC_PATH}
+        CONTEXT: ${CONTEXT}
+
+    env_file:
+      - .env
+
+    environment:
+      NODE_ENV: production
+      PORT: 2973
+      HOSTNAME: 0.0.0.0
+
+    ports:
+      - "2973:2973"
+
+    restart: unless-stopped
