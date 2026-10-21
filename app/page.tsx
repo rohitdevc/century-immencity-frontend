@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: meta?.meta_description,
       type: "website",
       url: meta?.canonical_tag,
-      siteName: "Century Join Developers",
+      siteName: "Century Immencity",
       images: [
         {
           url: banner?.banner_image,
