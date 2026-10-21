@@ -1,3 +1,5 @@
+name: century-immencity-frontend
+
 services:
   immencity:
     container_name: century-immencity
