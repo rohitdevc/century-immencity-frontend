@@ -2,7 +2,7 @@
 
 The frontend application for the [Immencity corporate website](https://www.immencity.co.in/), built with Next.js, React, TypeScript, and Tailwind CSS. The website presents company information, vision and objectives, management details, and investor-relations resources.
 
-**Live Website:** https://www.immencity.co.in/  
+**Netlify Website:** https://immencity.netlify.app/
 **Repository:** https://github.com/rohitdevc/century-immencity-frontend
 
 ## Overview
@@ -20,6 +20,7 @@ This project delivers a responsive corporate website for Immencity Office Parks 
 - **Responsive design** — layouts styled with Tailwind CSS.
 - **Containerized deployment** — Docker and Docker Compose support.
 - **Automated deployment** — GitHub Actions workflow for production deployment.
+- **Netlify Deployment** — Hosted on Netlify with deployment-aware Next.js configuration.
 
 ## Technology Stack
 
