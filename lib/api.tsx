@@ -16,7 +16,7 @@ export async function apiFetch<T>(endpoint: string, options: RequestInit = {}): 
     const res = await fetch(`${baseUrl}${endpoint}`, {
         ...options,
         headers,
-        cache: "no-store",
+        cache: "force-cache",
     });
     
     if (!res.ok) {
